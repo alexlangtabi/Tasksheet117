@@ -18,19 +18,14 @@ public class largeNum {
         num2 = input.nextInt();
 
         int largest = num;
-
         if (num1 > largest) {
             largest = num1;
-            System.out.println(largest + " is the largest number.");
-        }
-        if (num2 > largest) {
+        } else if (num2 > largest) {
             largest = num2;
-            System.out.println(largest + " is the largest number.");
-        }
-        if ( num == num1 && num1 == num2) {
+        } else if ( num == num1 && num1 == num2) {
             System.out.println(num + "," + num1 + "," + num2 + " All number is equal");
         }
-
+            System.out.println(largest + " is the largest number.");
         input.close();
 
     }
